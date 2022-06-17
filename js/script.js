@@ -50,26 +50,47 @@ const teamMembersArray = [
 
 // richiamo il container delle card dove appendere le card
 const teamContainer = document.querySelector('.team-container');
+// richiamo il bottone 
+const addBtn = document.getElementById('addMemberButton');
+
+// creo un nuovo oggetto
+const newMember = {
+    name: '',
+    ruolo: '',
+    photo: ''
+}
+
+console.log(newMember)
+
+// dichiaro la funzione che crea nuovi oggetti
+createCard (teamMembersArray)
+
+
+addBtn.addEventListener('click',
+    function(){
+
+    }
+)
 
 // scorro l'array deggli oggetti
 
 for(i = 0; i < teamMembersArray.length; i++){
     // scorro gli oggetti dentro l'array
-    const teamMembers = teamMembersArray[i];
-    console.log(teamMembers);
+    // const teamMembers = teamMembersArray[i];
+    // console.log(teamMembers);
 
     // creo variabile per poi appendarla
-    const teamToWrite = `
-    <div class="team-card">
-        <div class="card-image">
-            <img src= '${teamMembers.photo}'/>
-        </div>
+    // const teamToWrite = `
+    // <div class="team-card">
+    //     <div class="card-image">
+    //         <img src= '${teamMembers.photo}'/>
+    //     </div>
         
-        <div class="card-text">
-            <h3>${teamMembers.name}</h3>
-            <p>${teamMembers.ruolo}</p>
-        </div>
-    </div>`
+    //     <div class="card-text">
+    //         <h3>${teamMembers.name}</h3>
+    //         <p>${teamMembers.ruolo}</p>
+    //     </div>
+    // </div>`
     
 
 //   console.log(teamToWrite)
@@ -79,10 +100,24 @@ for(i = 0; i < teamMembersArray.length; i++){
 //   console.log(teamToWrite)
 
 
-teamContainer.innerHTML += teamToWrite;
+// teamContainer.innerHTML += teamToWrite;
 
 //   console.log(teamContainer);
   
   
 }
+
+
+// FUNCTION
+
+// creo una function per analizzare gli elementi di teamMembersArray
+function createCard (newArrayObject){
+    // creo un ciclo for per analizzare gli elementi dell'array
+    for(i = 0; i < newArrayObject.length; i++){
+        const arrayElement = newArrayObject[i];
+        console.log([i])
+    }
+}
+
+
  
