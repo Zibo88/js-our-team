@@ -10,36 +10,31 @@
 const teamMembersArray = [
     // primo membro
     {
-        name: 'Angela',
-        lastName: 'Carrol',
+        name: 'Angela Carrol',
         ruolo: 'Chief Editor',
         photo: 'angela-caroll-chief-editor.jpg'
     },
     // secondo membro
     {
-        name: 'Walter',
-        lastName: 'Gordon',
+        name: 'Walter Gordon',
         ruolo: 'Office Manage',
         photo: 'walter-gordon-office-manager.jpg'
     },
     // terzo membro
     {
-        name: 'Angela',
-        lastName: 'Lopez',
+        name: 'Angela Lopez',
         ruolo: 'Social Media Manager',
         photo: 'angela-lopez-social-media-manager.jpg'
     },
     // quarto membro
     {
-        name: 'Scott',
-        lastName: 'Estrada',
+        name: 'Scott Estrada',
         ruolo: 'Developer',
         photo: 'scott-estrada-developer.jpg'
     },
     // quinto membro
     {
-        name: 'Barbara',
-        lastName: 'Ramos',
+        name: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
         photo: 'barbara-ramos-graphic.jpg'
     }
@@ -63,7 +58,6 @@ for(i = 0; i < teamMembersArray.length; i++){
             <img src=${teamMembers.photo}"/>
         </div>
         
-        
         <div class="card-text">
             <h3>${teamMembers.name}</h3>
             <h3>${teamMembers.lastName}</h3>
@@ -74,6 +68,10 @@ for(i = 0; i < teamMembersArray.length; i++){
 
   console.log(teamToWrite)
   console.log(teamMembers.photo)
+  console.log(teamMembers.name)
+  console.log(teamMembers.lastName)
+  console.log(teamMembers.ruolo)
+  console.log(teamToWrite)
 
 
   teamContainer.innerHTML += teamMembers;
