@@ -8,39 +8,46 @@
 // creo un array per contenere gli oggetti
 
 const teamMembersArray = [
-    // primo membro
+    //primo mwmbro
+    {
+        name: 'Wayne Barnett',
+        ruolo: 'Founder & CEO',
+        photo: 'img/wayne-barnett-founder-ceo.jpg'
+    },
+    // secondo membro
     {
         name: 'Angela Carrol',
         ruolo: 'Chief Editor',
         photo: 'img/angela-caroll-chief-editor.jpg'
     },
-    // secondo membro
+    // terzo membro
     {
         name: 'Walter Gordon',
         ruolo: 'Office Manage',
         photo: 'img/walter-gordon-office-manager.jpg'
     },
-    // terzo membro
+    // quarto membro
     {
         name: 'Angela Lopez',
         ruolo: 'Social Media Manager',
         photo: 'img/angela-lopez-social-media-manager.jpg'
     },
-    // quarto membro
+    // quinto membro
     {
         name: 'Scott Estrada',
         ruolo: 'Developer',
         photo: 'img/scott-estrada-developer.jpg'
     },
-    // quinto membro
+    // sesto membro
     {
         name: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
-        photo: 'img/wayne-barnett-founder-ceo.jpg'
+        photo: 'img/barbara-ramos-graphic-designer.jpg'
     }
-    
+
 ]
-    
+
+
 // richiamo il container delle card dove appendere le card
 const teamContainer = document.querySelector('.team-container');
 
@@ -60,23 +67,21 @@ for(i = 0; i < teamMembersArray.length; i++){
         
         <div class="card-text">
             <h3>${teamMembers.name}</h3>
-            <h3>${teamMembers.lastName}</h3>
             <p>${teamMembers.ruolo}</p>
         </div>
     </div>`
     
 
-  console.log(teamToWrite)
-  console.log(teamMembers.photo)
-  console.log(teamMembers.name)
-  console.log(teamMembers.lastName)
-  console.log(teamMembers.ruolo)
-  console.log(teamToWrite)
+//   console.log(teamToWrite)
+//   console.log(teamMembers.photo)
+//   console.log(teamMembers.name)
+//   console.log(teamMembers.ruolo)
+//   console.log(teamToWrite)
 
 
-  teamContainer.innerHTML += teamToWrite;
+teamContainer.innerHTML += teamToWrite;
 
-  console.log(teamContainer);
+//   console.log(teamContainer);
   
   
 }
