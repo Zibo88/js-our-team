@@ -76,31 +76,31 @@ addBtn.addEventListener('click',
 
 for(i = 0; i < teamMembersArray.length; i++){
     // scorro gli oggetti dentro l'array
-    // const teamMembers = teamMembersArray[i];
-    // console.log(teamMembers);
+     const teamMembers = teamMembersArray[i];
+    console.log(teamMembers);
 
     // creo variabile per poi appendarla
-    // const teamToWrite = `
-    // <div class="team-card">
-    //     <div class="card-image">
-    //         <img src= '${teamMembers.photo}'/>
-    //     </div>
+    const teamToWrite = `
+    <div class="team-card">
+         <div class="card-image">
+            <img src= '${teamMembers.photo}'/>
+         </div>
         
-    //     <div class="card-text">
-    //         <h3>${teamMembers.name}</h3>
-    //         <p>${teamMembers.ruolo}</p>
-    //     </div>
-    // </div>`
+         <div class="card-text">
+             <h3>${teamMembers.name}</h3>
+             <p>${teamMembers.ruolo}</p>
+         </div>
+    </div>`
     
 
-//   console.log(teamToWrite)
-//   console.log(teamMembers.photo)
-//   console.log(teamMembers.name)
-//   console.log(teamMembers.ruolo)
-//   console.log(teamToWrite)
+console.log(teamToWrite)
+console.log(teamMembers.photo)
+console.log(teamMembers.name)
+console.log(teamMembers.ruolo)
+console.log(teamToWrite)
 
 
-// teamContainer.innerHTML += teamToWrite;
+teamContainer.innerHTML += teamToWrite;
 
 //   console.log(teamContainer);
   
@@ -118,6 +118,3 @@ function createCard (newArrayObject){
         console.log([i])
     }
 }
-
-
- 
