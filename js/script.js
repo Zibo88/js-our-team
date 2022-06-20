@@ -54,16 +54,16 @@ const teamContainer = document.querySelector('.team-container');
 const addBtn = document.getElementById('addMemberButton');
 
 // creo un nuovo oggetto
-const newMember = {
-    name: '',
-    ruolo: '',
-    photo: ''
-}
+// const newMember = {
+//     name: '',
+//     ruolo: '',
+//     photo: ''
+// }
 
-console.log(newMember)
+// console.log(newMember)
 
-// dichiaro la funzione che crea nuovi oggetti
-createCard (teamMembersArray)
+// // dichiaro la funzione che crea nuovi oggetti
+// createCard (teamMembersArray)
 
 
 addBtn.addEventListener('click',
